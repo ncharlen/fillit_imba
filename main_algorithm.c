@@ -160,7 +160,6 @@ int		generate_start(char *str, int quantity)
 {
 	t_f			fun_fig;
 	t_gen_st	st;
-	char		d2garray[g_s][g_s];
 	char		*p;
 
 	st.temp_inital = creat_temp(st.temp_inital, str, quantity);
@@ -170,6 +169,7 @@ int		generate_start(char *str, int quantity)
 	g_f_p_a = malloc(sizeof(uint16_t) * (quantity + 1));
 	g_f_p_a[quantity] = '\0';
 	g_s = sqrt(MIN_SQR_SIZE * quantity);
+	char		d2garray[g_s][g_s];
 
 	if (g_flag == 1)
 		g_s += 1;
