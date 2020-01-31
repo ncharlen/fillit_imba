@@ -15,6 +15,7 @@
 #include "field.h"
 #include "main_algorithm.h"
 #include "move_figure.h"
+#include "logical.h"
 
 uint16_t	*create_copy_a(uint16_t *temp, int quantity, uint16_t *for_print)
 {

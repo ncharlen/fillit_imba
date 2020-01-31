@@ -15,6 +15,8 @@
 #include "field.h"
 #include "main_algorithm.h"
 #include "useful_f_p1.h"
+#include "f_f_m_a.h"
+#include "f_f_m_a_p2.h"
 
 t_f g_for_fill;
 
@@ -52,7 +54,7 @@ void	fill_bigarray(int g_s, char d2a[][g_s])
 	d2a[g_s][g_s] = '\n';
 }
 
-void	fill_f_l(int g_s, uint16_t *a, char d2a[][g_s])
+void	fill_f_l(int g_s, uint16_t *a, char d2a[g_s][g_s])
 {
 	int		k;
 	int32_t i;

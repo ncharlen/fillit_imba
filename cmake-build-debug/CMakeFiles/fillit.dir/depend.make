@@ -34,6 +34,8 @@ CMakeFiles/fillit.dir/figure.c.o: ../logical.h
 CMakeFiles/fillit.dir/figure.c.o: ../main_algorithm.h
 CMakeFiles/fillit.dir/figure.c.o: ../move_figure.h
 
+CMakeFiles/fillit.dir/fill_print_final_result.c.o: ../f_f_m_a.h
+CMakeFiles/fillit.dir/fill_print_final_result.c.o: ../f_f_m_a_p2.h
 CMakeFiles/fillit.dir/fill_print_final_result.c.o: ../field.h
 CMakeFiles/fillit.dir/fill_print_final_result.c.o: ../figure.h
 CMakeFiles/fillit.dir/fill_print_final_result.c.o: ../fill_print_final_result.c
@@ -74,6 +76,7 @@ CMakeFiles/fillit.dir/move_figure.c.o: ../move_figure.h
 
 CMakeFiles/fillit.dir/useful_f_p1.c.o: ../field.h
 CMakeFiles/fillit.dir/useful_f_p1.c.o: ../figure.h
+CMakeFiles/fillit.dir/useful_f_p1.c.o: ../logical.h
 CMakeFiles/fillit.dir/useful_f_p1.c.o: ../main_algorithm.h
 CMakeFiles/fillit.dir/useful_f_p1.c.o: ../move_figure.h
 CMakeFiles/fillit.dir/useful_f_p1.c.o: ../useful_f_p1.c

@@ -66,7 +66,8 @@ int		se_pos_st(t_f *figure, t_f *m_f, t_f *borders, char *str)
 				move_right(&f_c);
 			}
 			++y;
-			move(figure, f_c);
+			move_down(figure);
+			copy_in_struct(&f_c, figure);
 		}
 	}
 	return (0);
@@ -149,7 +150,8 @@ int		s_p_e(t_f *figure, t_f *m_f, t_f *borders, char *str)
 			move_right(&f_c);
 		}
 		++y;
-		move(figure, f_c);
+		move_down(figure);
+		copy_in_struct(&f_c, figure);
 	}
 	return (0);
 }
@@ -168,6 +170,7 @@ int		generate_start(char *str, int quantity)
 	g_f_p_a = malloc(sizeof(uint16_t) * (quantity + 1));
 	g_f_p_a[quantity] = '\0';
 	g_s = sqrt(MIN_SQR_SIZE * quantity);
+
 	if (g_flag == 1)
 		g_s += 1;
 	if (str[1])
