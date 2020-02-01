@@ -22,5 +22,7 @@
 # include "main_algorithm.h"
 
 void	set_gen_st(t_ms *p, char *str, int quantity);
+void	set_gen_p0(t_ms *q, char *str, t_gg *g_g);
+int 	set_gen_arg(t_ms *q, char d2garray[][g_s], int quantity, char *str);
 
 #endif
