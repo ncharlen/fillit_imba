@@ -27,7 +27,7 @@ int	main(int argc, char **argv)
 		printf("usage: fillit input_file\n");
 		return (1);
 	}*/
-	fd = open("/Users/ncharlen/fillit_imba/example_valid", O_RDONLY);
+	fd = open("/Users/dark/Documents/code/fillit_imba/example_valid", O_RDONLY);
 	a = malloc(sizeof(char) * (MAX_FIG + 1));
 	ft_memset(a, '\0', 27);
 	if (get_figures(a, fd) == -1)

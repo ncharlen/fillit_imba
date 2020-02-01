@@ -21,6 +21,6 @@
 # include "field.h"
 # include "main_algorithm.h"
 
-void	gen_else(t_gen *gen, char *str, t_f fun_fig);
+int	gen_else(t_gg *g_gg, char *str, t_gen *gen_p);
 
 #endif

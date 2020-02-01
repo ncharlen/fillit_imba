@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ncharlen/fillit_imba
+CMAKE_SOURCE_DIR = /Users/dark/Documents/code/fillit_imba
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ncharlen/fillit_imba/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/dark/Documents/code/fillit_imba/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/fillit.dir/depend.make
@@ -59,146 +59,146 @@ include CMakeFiles/fillit.dir/flags.make
 
 CMakeFiles/fillit.dir/main.c.o: CMakeFiles/fillit.dir/flags.make
 CMakeFiles/fillit.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ncharlen/fillit_imba/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/fillit.dir/main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fillit.dir/main.c.o   -c /Users/ncharlen/fillit_imba/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dark/Documents/code/fillit_imba/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/fillit.dir/main.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fillit.dir/main.c.o   -c /Users/dark/Documents/code/fillit_imba/main.c
 
 CMakeFiles/fillit.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fillit.dir/main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ncharlen/fillit_imba/main.c > CMakeFiles/fillit.dir/main.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dark/Documents/code/fillit_imba/main.c > CMakeFiles/fillit.dir/main.c.i
 
 CMakeFiles/fillit.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fillit.dir/main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ncharlen/fillit_imba/main.c -o CMakeFiles/fillit.dir/main.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dark/Documents/code/fillit_imba/main.c -o CMakeFiles/fillit.dir/main.c.s
 
 CMakeFiles/fillit.dir/field.c.o: CMakeFiles/fillit.dir/flags.make
 CMakeFiles/fillit.dir/field.c.o: ../field.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ncharlen/fillit_imba/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/fillit.dir/field.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fillit.dir/field.c.o   -c /Users/ncharlen/fillit_imba/field.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dark/Documents/code/fillit_imba/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/fillit.dir/field.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fillit.dir/field.c.o   -c /Users/dark/Documents/code/fillit_imba/field.c
 
 CMakeFiles/fillit.dir/field.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fillit.dir/field.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ncharlen/fillit_imba/field.c > CMakeFiles/fillit.dir/field.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dark/Documents/code/fillit_imba/field.c > CMakeFiles/fillit.dir/field.c.i
 
 CMakeFiles/fillit.dir/field.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fillit.dir/field.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ncharlen/fillit_imba/field.c -o CMakeFiles/fillit.dir/field.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dark/Documents/code/fillit_imba/field.c -o CMakeFiles/fillit.dir/field.c.s
 
 CMakeFiles/fillit.dir/figure.c.o: CMakeFiles/fillit.dir/flags.make
 CMakeFiles/fillit.dir/figure.c.o: ../figure.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ncharlen/fillit_imba/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/fillit.dir/figure.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fillit.dir/figure.c.o   -c /Users/ncharlen/fillit_imba/figure.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dark/Documents/code/fillit_imba/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/fillit.dir/figure.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fillit.dir/figure.c.o   -c /Users/dark/Documents/code/fillit_imba/figure.c
 
 CMakeFiles/fillit.dir/figure.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fillit.dir/figure.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ncharlen/fillit_imba/figure.c > CMakeFiles/fillit.dir/figure.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dark/Documents/code/fillit_imba/figure.c > CMakeFiles/fillit.dir/figure.c.i
 
 CMakeFiles/fillit.dir/figure.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fillit.dir/figure.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ncharlen/fillit_imba/figure.c -o CMakeFiles/fillit.dir/figure.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dark/Documents/code/fillit_imba/figure.c -o CMakeFiles/fillit.dir/figure.c.s
 
 CMakeFiles/fillit.dir/main_algorithm.c.o: CMakeFiles/fillit.dir/flags.make
 CMakeFiles/fillit.dir/main_algorithm.c.o: ../main_algorithm.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ncharlen/fillit_imba/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/fillit.dir/main_algorithm.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fillit.dir/main_algorithm.c.o   -c /Users/ncharlen/fillit_imba/main_algorithm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dark/Documents/code/fillit_imba/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/fillit.dir/main_algorithm.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fillit.dir/main_algorithm.c.o   -c /Users/dark/Documents/code/fillit_imba/main_algorithm.c
 
 CMakeFiles/fillit.dir/main_algorithm.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fillit.dir/main_algorithm.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ncharlen/fillit_imba/main_algorithm.c > CMakeFiles/fillit.dir/main_algorithm.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dark/Documents/code/fillit_imba/main_algorithm.c > CMakeFiles/fillit.dir/main_algorithm.c.i
 
 CMakeFiles/fillit.dir/main_algorithm.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fillit.dir/main_algorithm.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ncharlen/fillit_imba/main_algorithm.c -o CMakeFiles/fillit.dir/main_algorithm.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dark/Documents/code/fillit_imba/main_algorithm.c -o CMakeFiles/fillit.dir/main_algorithm.c.s
 
 CMakeFiles/fillit.dir/fill_print_final_result.c.o: CMakeFiles/fillit.dir/flags.make
 CMakeFiles/fillit.dir/fill_print_final_result.c.o: ../fill_print_final_result.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ncharlen/fillit_imba/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/fillit.dir/fill_print_final_result.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fillit.dir/fill_print_final_result.c.o   -c /Users/ncharlen/fillit_imba/fill_print_final_result.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dark/Documents/code/fillit_imba/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/fillit.dir/fill_print_final_result.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fillit.dir/fill_print_final_result.c.o   -c /Users/dark/Documents/code/fillit_imba/fill_print_final_result.c
 
 CMakeFiles/fillit.dir/fill_print_final_result.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fillit.dir/fill_print_final_result.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ncharlen/fillit_imba/fill_print_final_result.c > CMakeFiles/fillit.dir/fill_print_final_result.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dark/Documents/code/fillit_imba/fill_print_final_result.c > CMakeFiles/fillit.dir/fill_print_final_result.c.i
 
 CMakeFiles/fillit.dir/fill_print_final_result.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fillit.dir/fill_print_final_result.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ncharlen/fillit_imba/fill_print_final_result.c -o CMakeFiles/fillit.dir/fill_print_final_result.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dark/Documents/code/fillit_imba/fill_print_final_result.c -o CMakeFiles/fillit.dir/fill_print_final_result.c.s
 
 CMakeFiles/fillit.dir/validate.c.o: CMakeFiles/fillit.dir/flags.make
 CMakeFiles/fillit.dir/validate.c.o: ../validate.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ncharlen/fillit_imba/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/fillit.dir/validate.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fillit.dir/validate.c.o   -c /Users/ncharlen/fillit_imba/validate.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dark/Documents/code/fillit_imba/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/fillit.dir/validate.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fillit.dir/validate.c.o   -c /Users/dark/Documents/code/fillit_imba/validate.c
 
 CMakeFiles/fillit.dir/validate.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fillit.dir/validate.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ncharlen/fillit_imba/validate.c > CMakeFiles/fillit.dir/validate.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dark/Documents/code/fillit_imba/validate.c > CMakeFiles/fillit.dir/validate.c.i
 
 CMakeFiles/fillit.dir/validate.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fillit.dir/validate.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ncharlen/fillit_imba/validate.c -o CMakeFiles/fillit.dir/validate.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dark/Documents/code/fillit_imba/validate.c -o CMakeFiles/fillit.dir/validate.c.s
 
 CMakeFiles/fillit.dir/useful_f_p1.c.o: CMakeFiles/fillit.dir/flags.make
 CMakeFiles/fillit.dir/useful_f_p1.c.o: ../useful_f_p1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ncharlen/fillit_imba/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/fillit.dir/useful_f_p1.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fillit.dir/useful_f_p1.c.o   -c /Users/ncharlen/fillit_imba/useful_f_p1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dark/Documents/code/fillit_imba/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/fillit.dir/useful_f_p1.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fillit.dir/useful_f_p1.c.o   -c /Users/dark/Documents/code/fillit_imba/useful_f_p1.c
 
 CMakeFiles/fillit.dir/useful_f_p1.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fillit.dir/useful_f_p1.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ncharlen/fillit_imba/useful_f_p1.c > CMakeFiles/fillit.dir/useful_f_p1.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dark/Documents/code/fillit_imba/useful_f_p1.c > CMakeFiles/fillit.dir/useful_f_p1.c.i
 
 CMakeFiles/fillit.dir/useful_f_p1.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fillit.dir/useful_f_p1.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ncharlen/fillit_imba/useful_f_p1.c -o CMakeFiles/fillit.dir/useful_f_p1.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dark/Documents/code/fillit_imba/useful_f_p1.c -o CMakeFiles/fillit.dir/useful_f_p1.c.s
 
 CMakeFiles/fillit.dir/move_figure.c.o: CMakeFiles/fillit.dir/flags.make
 CMakeFiles/fillit.dir/move_figure.c.o: ../move_figure.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ncharlen/fillit_imba/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/fillit.dir/move_figure.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fillit.dir/move_figure.c.o   -c /Users/ncharlen/fillit_imba/move_figure.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dark/Documents/code/fillit_imba/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/fillit.dir/move_figure.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fillit.dir/move_figure.c.o   -c /Users/dark/Documents/code/fillit_imba/move_figure.c
 
 CMakeFiles/fillit.dir/move_figure.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fillit.dir/move_figure.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ncharlen/fillit_imba/move_figure.c > CMakeFiles/fillit.dir/move_figure.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dark/Documents/code/fillit_imba/move_figure.c > CMakeFiles/fillit.dir/move_figure.c.i
 
 CMakeFiles/fillit.dir/move_figure.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fillit.dir/move_figure.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ncharlen/fillit_imba/move_figure.c -o CMakeFiles/fillit.dir/move_figure.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dark/Documents/code/fillit_imba/move_figure.c -o CMakeFiles/fillit.dir/move_figure.c.s
 
 CMakeFiles/fillit.dir/f_f_m_a.c.o: CMakeFiles/fillit.dir/flags.make
 CMakeFiles/fillit.dir/f_f_m_a.c.o: ../f_f_m_a.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ncharlen/fillit_imba/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/fillit.dir/f_f_m_a.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fillit.dir/f_f_m_a.c.o   -c /Users/ncharlen/fillit_imba/f_f_m_a.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dark/Documents/code/fillit_imba/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/fillit.dir/f_f_m_a.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fillit.dir/f_f_m_a.c.o   -c /Users/dark/Documents/code/fillit_imba/f_f_m_a.c
 
 CMakeFiles/fillit.dir/f_f_m_a.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fillit.dir/f_f_m_a.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ncharlen/fillit_imba/f_f_m_a.c > CMakeFiles/fillit.dir/f_f_m_a.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dark/Documents/code/fillit_imba/f_f_m_a.c > CMakeFiles/fillit.dir/f_f_m_a.c.i
 
 CMakeFiles/fillit.dir/f_f_m_a.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fillit.dir/f_f_m_a.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ncharlen/fillit_imba/f_f_m_a.c -o CMakeFiles/fillit.dir/f_f_m_a.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dark/Documents/code/fillit_imba/f_f_m_a.c -o CMakeFiles/fillit.dir/f_f_m_a.c.s
 
 CMakeFiles/fillit.dir/f_f_m_a_p2.c.o: CMakeFiles/fillit.dir/flags.make
 CMakeFiles/fillit.dir/f_f_m_a_p2.c.o: ../f_f_m_a_p2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ncharlen/fillit_imba/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/fillit.dir/f_f_m_a_p2.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fillit.dir/f_f_m_a_p2.c.o   -c /Users/ncharlen/fillit_imba/f_f_m_a_p2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dark/Documents/code/fillit_imba/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/fillit.dir/f_f_m_a_p2.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fillit.dir/f_f_m_a_p2.c.o   -c /Users/dark/Documents/code/fillit_imba/f_f_m_a_p2.c
 
 CMakeFiles/fillit.dir/f_f_m_a_p2.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fillit.dir/f_f_m_a_p2.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ncharlen/fillit_imba/f_f_m_a_p2.c > CMakeFiles/fillit.dir/f_f_m_a_p2.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dark/Documents/code/fillit_imba/f_f_m_a_p2.c > CMakeFiles/fillit.dir/f_f_m_a_p2.c.i
 
 CMakeFiles/fillit.dir/f_f_m_a_p2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fillit.dir/f_f_m_a_p2.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ncharlen/fillit_imba/f_f_m_a_p2.c -o CMakeFiles/fillit.dir/f_f_m_a_p2.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dark/Documents/code/fillit_imba/f_f_m_a_p2.c -o CMakeFiles/fillit.dir/f_f_m_a_p2.c.s
 
 CMakeFiles/fillit.dir/logical.c.o: CMakeFiles/fillit.dir/flags.make
 CMakeFiles/fillit.dir/logical.c.o: ../logical.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ncharlen/fillit_imba/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/fillit.dir/logical.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fillit.dir/logical.c.o   -c /Users/ncharlen/fillit_imba/logical.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dark/Documents/code/fillit_imba/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/fillit.dir/logical.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fillit.dir/logical.c.o   -c /Users/dark/Documents/code/fillit_imba/logical.c
 
 CMakeFiles/fillit.dir/logical.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fillit.dir/logical.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ncharlen/fillit_imba/logical.c > CMakeFiles/fillit.dir/logical.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dark/Documents/code/fillit_imba/logical.c > CMakeFiles/fillit.dir/logical.c.i
 
 CMakeFiles/fillit.dir/logical.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fillit.dir/logical.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ncharlen/fillit_imba/logical.c -o CMakeFiles/fillit.dir/logical.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dark/Documents/code/fillit_imba/logical.c -o CMakeFiles/fillit.dir/logical.c.s
 
 # Object files for target fillit
 fillit_OBJECTS = \
@@ -230,7 +230,7 @@ fillit: CMakeFiles/fillit.dir/f_f_m_a_p2.c.o
 fillit: CMakeFiles/fillit.dir/logical.c.o
 fillit: CMakeFiles/fillit.dir/build.make
 fillit: CMakeFiles/fillit.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ncharlen/fillit_imba/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C executable fillit"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dark/Documents/code/fillit_imba/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C executable fillit"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fillit.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -243,6 +243,6 @@ CMakeFiles/fillit.dir/clean:
 .PHONY : CMakeFiles/fillit.dir/clean
 
 CMakeFiles/fillit.dir/depend:
-	cd /Users/ncharlen/fillit_imba/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ncharlen/fillit_imba /Users/ncharlen/fillit_imba /Users/ncharlen/fillit_imba/cmake-build-debug /Users/ncharlen/fillit_imba/cmake-build-debug /Users/ncharlen/fillit_imba/cmake-build-debug/CMakeFiles/fillit.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/dark/Documents/code/fillit_imba/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dark/Documents/code/fillit_imba /Users/dark/Documents/code/fillit_imba /Users/dark/Documents/code/fillit_imba/cmake-build-debug /Users/dark/Documents/code/fillit_imba/cmake-build-debug /Users/dark/Documents/code/fillit_imba/cmake-build-debug/CMakeFiles/fillit.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/fillit.dir/depend
 

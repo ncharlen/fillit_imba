@@ -15,6 +15,7 @@ CMakeFiles/fillit.dir/f_f_m_a_p2.c.o: ../f_f_m_a_p2.c
 CMakeFiles/fillit.dir/f_f_m_a_p2.c.o: ../f_f_m_a_p2.h
 CMakeFiles/fillit.dir/f_f_m_a_p2.c.o: ../field.h
 CMakeFiles/fillit.dir/f_f_m_a_p2.c.o: ../figure.h
+CMakeFiles/fillit.dir/f_f_m_a_p2.c.o: ../logical.h
 CMakeFiles/fillit.dir/f_f_m_a_p2.c.o: ../main_algorithm.h
 CMakeFiles/fillit.dir/f_f_m_a_p2.c.o: ../move_figure.h
 CMakeFiles/fillit.dir/f_f_m_a_p2.c.o: ../useful_f_p1.h
