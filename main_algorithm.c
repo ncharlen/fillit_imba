@@ -17,12 +17,13 @@
 #include "move_figure.h"
 #include "f_f_m_a.h"
 #include "f_f_m_a_p2.h"
+#include "f_f_m_a_p3.h"
 #include "logical.h"
 
 t_gg		g_gg;
 
 int			g_s = 0;
-int			g_counter;
+int			g_counter = 0;
 int			g_flag = 0;
 uint16_t	*g_f_p_a;
 
@@ -34,39 +35,26 @@ void	put_figure_in_array(char index, u_int8_t x, u_int8_t y)
 
 int		se_pos_st(t_f *figure, t_gg *g_gg, char *str)
 {
-	t_f 	f_c;
-	t_s 	se_st;
-	t_xy	se_xy;
-	t_s		*se_st_p;
+	t_m		m;
+	t_m		*p;
 
-	se_st_p = &se_st;
-	se_xy.y = 0;
-	se_st_p->max_x_f = count_for_max_x(figure);
-	se_st_p->max_y_f = count_for_max_y(figure);
-	se_st_p->max_x = g_s - se_st_p->max_x_f + 1;
-	se_st_p->max_y = g_s - se_st_p->max_y_f + 1;
-	copy_in_struct(&f_c, figure);
+	p = &m;
+	set_st_p0(p, g_s, figure);
 	if (str[1])
 	{
-		while (se_xy.y < se_st_p->max_y)
+		while (p->se_xy.y < p->se_st_p->max_y)
 		{
-			se_xy.x = 0;
-			while (se_xy.x < se_st_p->max_x)
+			p->se_xy.x = 0;
+			while (p->se_xy.x < p->se_st_p->max_x)
 			{
-				insert_figure(&g_gg->g_m_f, &f_c);
-				cr_bor(&g_gg->g_b_f, &g_gg->g_m_f);
-				put_figure_in_array(*str, se_xy.x, se_xy.y);
+				se_pos_st_p1(g_gg, p->se_xy, &p->f_c, str);
 				if (generate(str + 1))
 					return (1);
 				--g_counter;
-				log_xor(&g_gg->g_b_f, &g_gg->g_m_f, f_c);
-				cr_bor(&g_gg->g_b_f, &g_gg->g_m_f);
-				++se_xy.x;
-				move_right(&f_c);
+				se_pos_st_p2(g_gg, &p->f_c);
+				se_pos_d(p, figure);
 			}
-			++se_xy.y;
-			move_down(figure);
-			copy_in_struct(&f_c, figure);
+			se_pos_m(p, figure);
 		}
 	}
 	return (0);
@@ -74,41 +62,29 @@ int		se_pos_st(t_f *figure, t_gg *g_gg, char *str)
 
 int		se_pos(t_f *figure, t_gg *g_gg, char *str)
 {
-	t_f f_c;
-	t_s se_po;
-	int y;
-	int x;
+	t_m		m;
+	t_m		*p;
 
-	y = 0;
-	se_po.max_x_f = count_for_max_x(figure);
-	se_po.max_y_f = count_for_max_y(figure);
-	se_po.max_x = g_s - se_po.max_x_f + 1;
-	se_po.max_y = g_s - se_po.max_y_f + 1;
-	copy_in_struct(&f_c, figure);
+	p = &m;
+	set_st_p0(p, g_s, figure);
 	if (str[1])
 	{
-		while (y < se_po.max_y)
+		while (p->se_xy.y < p->se_st.max_y)
 		{
-			x = 0;
-			while (x < se_po.max_x)
+			p->se_xy.x = 0;
+			while (p->se_xy.x < p->se_st.max_x)
 			{
-				if (c_c(&f_c, &g_gg->g_b_f) && !c_c(&f_c, &g_gg->g_m_f))
+				if (c_c(&p->f_c, &g_gg->g_b_f) && !c_c(&p->f_c, &g_gg->g_m_f))
 				{
-					insert_figure(&g_gg->g_m_f, &f_c);
-					cr_bor(&g_gg->g_b_f, &g_gg->g_m_f);
-					put_figure_in_array(*str, x, y);
+					se_pos_st_p1(g_gg, p->se_xy, &p->f_c, str);
 					if (generate(str + 1))
 						return (1);
 					--g_counter;
-					log_xor(&g_gg->g_b_f, &g_gg->g_m_f, f_c);
-					cr_bor(&g_gg->g_b_f, &g_gg->g_m_f);
+					se_pos_st_p2(g_gg, &p->f_c);
 				}
-				++x;
-				move_right(&f_c);
+				se_pos_d(p, figure);
 			}
-			++y;
-			move_down(figure);
-			copy_in_struct(&f_c, figure);
+			se_pos_m(p, figure);
 		}
 	}
 	return (0);
@@ -116,41 +92,32 @@ int		se_pos(t_f *figure, t_gg *g_gg, char *str)
 
 int		s_p_e(t_f *figure, t_gg *g_gg, char *str)
 {
-	t_f		f_c;
-	t_s		e;
-	t_s_f	s;
-	int		y;
-	int		x;
+	t_m2	m2;
+	t_m2	*p;
 
-	y = 0;
-	s.m_x_f = count_for_max_x(figure);
-	s.m_y_f = count_for_max_y(figure);
-	s.m_x_b = count_for_max_x(&g_gg->g_b_f);
-	s.m_y_b = count_for_max_y(&g_gg->g_b_f);
-	e.max_x = ((s.m_x_b + s.m_x_f - 1) <= g_s) ? s.m_x_b : (g_s - s.m_x_f + 1);
-	e.max_y = ((s.m_y_b + s.m_y_f - 1) <= g_s) ? s.m_y_b : (g_s - s.m_y_f + 1);
-	copy_in_struct(&f_c, figure);
-	while (y < e.max_y)
+	p = &m2;
+	set_s_p_e(p, g_s, g_gg, figure);
+	while (p->se_xy.y < p->e.max_y)
 	{
-		x = 0;
-		while (x < e.max_x)
+		p->se_xy.x = 0;
+		while (p->se_xy.x < p->e.max_x)
 		{
-			if (c_c(&f_c, &g_gg->g_b_f) && !c_c(&f_c, &g_gg->g_m_f))
+			if (c_c(&p->f_c, &g_gg->g_b_f) && !c_c(&p->f_c, &g_gg->g_m_f))
 			{
-				insert_figure(&g_gg->g_m_f, &f_c);
+				insert_figure(&g_gg->g_m_f, &p->f_c);
 				cr_bor(&g_gg->g_b_f, &g_gg->g_m_f);
-				put_figure_in_array(*str, x, y);
+				put_figure_in_array(*str, p->se_xy.x, p->se_xy.y);
 				copy_in_struct(&g_gg->g_o_v, &g_gg->g_m_f);
-				log_xor(&g_gg->g_b_f, &g_gg->g_m_f, f_c);
+				log_xor(&g_gg->g_b_f, &g_gg->g_m_f, p->f_c);
 				cr_bor(&g_gg->g_b_f, &g_gg->g_m_f);
 				return (1);
 			}
-			++x;
-			move_right(&f_c);
+			++p->se_xy.x;
+			move_right(&p->f_c);
 		}
-		++y;
+		++p->se_xy.y;
 		move_down(figure);
-		copy_in_struct(&f_c, figure);
+		copy_in_struct(&p->f_c, figure);
 	}
 	return (0);
 }
@@ -165,12 +132,8 @@ int		generate_start(char *str, int quantity)
 	st.temp_inital = creat_temp(st.temp_inital, str, quantity);
 	st.check_mask = 0;
 	st.arg = 0;
-	g_counter = 0;
 	g_f_p_a = malloc(sizeof(uint16_t) * (quantity + 1));
 	g_f_p_a[quantity] = '\0';
-
-
-
 	if (g_flag == 1)
 		g_s += 1;
 	if (str[1])

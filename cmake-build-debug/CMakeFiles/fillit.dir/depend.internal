@@ -20,6 +20,17 @@ CMakeFiles/fillit.dir/f_f_m_a_p2.c.o
  /Users/dark/Documents/code/fillit_imba/main_algorithm.h
  /Users/dark/Documents/code/fillit_imba/move_figure.h
  /Users/dark/Documents/code/fillit_imba/useful_f_p1.h
+CMakeFiles/fillit.dir/f_f_m_a_p3.c.o
+ /Users/dark/Documents/code/fillit_imba/f_f_m_a.h
+ /Users/dark/Documents/code/fillit_imba/f_f_m_a_p2.h
+ /Users/dark/Documents/code/fillit_imba/f_f_m_a_p3.c
+ /Users/dark/Documents/code/fillit_imba/f_f_m_a_p3.h
+ /Users/dark/Documents/code/fillit_imba/field.h
+ /Users/dark/Documents/code/fillit_imba/figure.h
+ /Users/dark/Documents/code/fillit_imba/logical.h
+ /Users/dark/Documents/code/fillit_imba/main_algorithm.h
+ /Users/dark/Documents/code/fillit_imba/move_figure.h
+ /Users/dark/Documents/code/fillit_imba/useful_f_p1.h
 CMakeFiles/fillit.dir/field.c.o
  /Users/dark/Documents/code/fillit_imba/field.c
  /Users/dark/Documents/code/fillit_imba/field.h
@@ -61,6 +72,7 @@ CMakeFiles/fillit.dir/main.c.o
 CMakeFiles/fillit.dir/main_algorithm.c.o
  /Users/dark/Documents/code/fillit_imba/f_f_m_a.h
  /Users/dark/Documents/code/fillit_imba/f_f_m_a_p2.h
+ /Users/dark/Documents/code/fillit_imba/f_f_m_a_p3.h
  /Users/dark/Documents/code/fillit_imba/field.h
  /Users/dark/Documents/code/fillit_imba/figure.h
  /Users/dark/Documents/code/fillit_imba/fill_print_final_result.h

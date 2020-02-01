@@ -56,6 +56,21 @@ typedef struct	s_gg{
 	t_f			g_o_v;
 }				t_gg;
 
+typedef struct	s_mega{
+	t_f 	f_c;
+	t_f 	*f_p;
+	t_s 	se_st;
+	t_xy	se_xy;
+	t_s		*se_st_p;
+}				t_m;
+
+typedef struct	s_mega2{
+	t_f		f_c;
+	t_s		e;
+	t_s_f	s;
+	t_xy	se_xy;
+}				t_m2;
+
 int				se_pos_st(t_f *figure, t_gg *g_gg, char *str);
 int				se_pos(t_f *figure, t_gg *g_gg, char *str);
 int				s_p_e(t_f *figure, t_gg *g_gg, char *str);

@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   f_f_m_a_p2.h                                       :+:      :+:    :+:   */
+/*   f_f_m_a_p3.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ncharlen <ncharlen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FILLIT_F_F_M_A_P2_H
-# define FILLIT_F_F_M_A_P2_H
+#ifndef FILLIT_F_F_M_A_P3_H
+# define FILLIT_F_F_M_A_P3_H
 
 # include <stdio.h>
 # include <stdlib.h>
@@ -21,10 +21,8 @@
 # include "field.h"
 # include "main_algorithm.h"
 
-int	gen_else(t_gg *g_gg, char *str, t_gen *gen_p);
-void	set_st(t_s *se_st, int g_s, t_f *figure);
-void	se_pos_st_p1(t_gg *g_g, t_xy se_xy, t_f *f, char *str);
-void	se_pos_st_p2(t_gg *g_g, t_f *f);
-void	set_st_p0(t_m *p, int g_s, t_f *figure);
+void	se_pos_m(t_m *p, t_f *figure);
+void	se_pos_d(t_m *p, t_f *figure);
+void	set_s_p_e(t_m2 *p, int g_s, t_gg *g, t_f *figure);
 
 #endif
