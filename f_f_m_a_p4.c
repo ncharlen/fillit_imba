@@ -27,6 +27,7 @@
 extern uint16_t	*g_f_p_a;
 extern int 		g_flag;
 
+
 void	set_gen_st(t_ms *q, char *str, int quantity)
 {
 	t_ms *st;

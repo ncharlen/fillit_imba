@@ -54,13 +54,12 @@ void	fill_bigarray(int g_s, char d2a[][g_s])
 	d2a[g_s][g_s] = '\n';
 }
 
-void	fill_f_l(int g_s, uint16_t *a, char d2a[g_s][g_s])
+void	fill_f_l(int g_s, uint16_t *a, char d2a[][g_s])
 {
 	int		k;
 	int32_t i;
 	int32_t j;
 
-	j = 0;
 	while (*a)
 	{
 		i = 0;

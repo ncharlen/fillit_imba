@@ -11,4 +11,7 @@
 # include "field.h"
 # include "main_algorithm.h"
 
+int		generate_start(char *str, int quantity);
+void	check_quant(int quantity);
+
 #endif

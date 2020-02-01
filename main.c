@@ -14,6 +14,7 @@
 #include "figure.h"
 #include "main_algorithm.h"
 #include "validate.h"
+#include "main_a_sup.h"
 #define MAX_FIG 26
 
 int	main(int argc, char **argv)
@@ -27,7 +28,8 @@ int	main(int argc, char **argv)
 		printf("usage: fillit input_file\n");
 		return (1);
 	}*/
-	fd = open("/Users/dark/Documents/code/fillit_imba/example_valid", O_RDONLY);
+
+	fd = open("/Users/dark/Documents/code/fillit_imba/ex_5", O_RDONLY);
 	a = malloc(sizeof(char) * (MAX_FIG + 1));
 	ft_memset(a, '\0', 27);
 	if (get_figures(a, fd) == -1)
@@ -36,6 +38,7 @@ int	main(int argc, char **argv)
 		return (1);
 	}
 	n = get_figure_numbers(a);
+	//check_quant(n);
 	generate_start(a, n);
 	free(a);
 	close(fd);

@@ -17,11 +17,17 @@ extern int		g_counter;
 extern uint16_t	*g_f_p_a;
 int			g_flag = 0;
 
+void	check_quant(int quantity)
+{
+	if (quantity == 9 || quantity == 22)
+		g_s = sqrt(M_S * quantity) + 1;
+}
+
 int		generate_start(char *str, int quantity)
 {
 	t_ms		ms;
 	t_ms		*q;
-	char		d2garray[(g_s = sqrt(M_S * quantity))][(g_s = sqrt(M_S * quantity))];
+	char		d2garray[g_s][g_s];
 
 	q = &ms;
 	set_gen_st(q, str, quantity);
