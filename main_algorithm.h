@@ -39,7 +39,7 @@ typedef struct	s_gen{
 }				t_gen;
 
 typedef struct	s_gen_st{
-	char	*temp_inital;
+	char	*t_i;
 	int8_t	check_mask;
 	int		arg;
 

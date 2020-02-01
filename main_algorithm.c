@@ -19,6 +19,7 @@
 #include "f_f_m_a_p2.h"
 #include "f_f_m_a_p3.h"
 #include "logical.h"
+#include "f_f_m_a_p4.h"
 
 t_gg		g_gg;
 
@@ -112,12 +113,9 @@ int		s_p_e(t_f *figure, t_gg *g_gg, char *str)
 				cr_bor(&g_gg->g_b_f, &g_gg->g_m_f);
 				return (1);
 			}
-			++p->se_xy.x;
-			move_right(&p->f_c);
+			se_pos_d2(p, figure);
 		}
-		++p->se_xy.y;
-		move_down(figure);
-		copy_in_struct(&p->f_c, figure);
+		se_pos_m2(p, figure);
 	}
 	return (0);
 }
@@ -125,13 +123,15 @@ int		s_p_e(t_f *figure, t_gg *g_gg, char *str)
 int		generate_start(char *str, int quantity)
 {
 	t_f			fun_fig;
-	t_gen_st	st;
+	t_gen_st	st_np;
+	t_gen_st	*st;
 	char		*p;
 	char		d2garray[(g_s = sqrt(M_S * quantity))][(g_s = sqrt(M_S * quantity))];
 
-	st.temp_inital = creat_temp(st.temp_inital, str, quantity);
-	st.check_mask = 0;
-	st.arg = 0;
+	st = &st_np;
+	st->t_i = creat_temp(st->t_i, str, quantity);
+	st->check_mask = 0;
+	st->arg = 0;
 	g_f_p_a = malloc(sizeof(uint16_t) * (quantity + 1));
 	g_f_p_a[quantity] = '\0';
 	if (g_flag == 1)
@@ -139,35 +139,33 @@ int		generate_start(char *str, int quantity)
 	if (str[1])
 	{
 		p = str;
-		while (*p && st.arg != 1)
+		while (*p && st->arg != 1)
 		{
-			if ((st.check_mask & (1 << (*p))) == 0)
+			if ((st->check_mask & (1 << (*p))) == 0)
 			{
-				st.check_mask |= 1 << (*p);
+				st->check_mask |= 1 << (*p);
 				gen_start_swap(p, str);
 				set_figure(&fun_fig, create_tetro(*str));
-				st.arg = se_pos_st(&fun_fig, &g_gg, str);
+				st->arg = se_pos_st(&fun_fig, &g_gg, str);
 				gen_start_swap(p, str);
 			}
 			++p;
 		}
-		if (st.arg == 1)
+		if (st->arg == 1)
 		{
-			{
-				check_array(st.temp_inital, g_f_p_a, quantity);
+				check_array(st->t_i, g_f_p_a, quantity);
 				fill_bigarray(g_s, d2garray);
 				fill_f_l(g_s, g_f_p_a, d2garray);
 				print_bigarray(g_s, d2garray);
 				free(g_f_p_a);
-				free(st.temp_inital);
+				free(st->t_i);
 				return (1);
-			}
 		}
 		else
 		{
 			g_flag = 1;
 			free(g_f_p_a);
-			free(st.temp_inital);
+			free(st->t_i);
 			generate_start(str, quantity);
 		}
 	}

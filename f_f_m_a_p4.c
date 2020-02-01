@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   f_f_m_a_p3.c                                       :+:      :+:    :+:   */
+/*   f_f_m_a_p4.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ncharlen <ncharlen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "f_f_m_a_p4.h"
 #include "f_f_m_a_p3.h"
 #include "f_f_m_a_p2.h"
 #include "useful_f_p1.h"
@@ -20,60 +21,17 @@
 #include "f_f_m_a.h"
 #include "logical.h"
 #include "main_algorithm.h"
-
-void	se_pos_m(t_m *p, t_f *figure)
+/*
+void	set_gen_st(t_gen_st *p, char *str, int quantity)
 {
-	t_m	*d;
+	t_gen_st *st;
+	uint16_t	*g;
 
-	d = p;
-	++d->se_xy.y;
-	move_down(figure);
-	copy_in_struct(&d->f_c, figure);
-}
-
-void	se_pos_d(t_m *p, t_f *figure)
-{
-	t_m	*d;
-
-	d = p;
-	++d->se_xy.x;
-	move_right(&p->f_c);
-}
-
-void	set_s_p_e(t_m2 *p, int g_s, t_gg *g, t_f *figure)
-{
-	t_gg	*g_gg;
-	t_m2	*m;
-
-	m = p;
-	g_gg = g;
-	m->se_xy.y = 0;
-	m->s.m_x_f = count_for_max_x(figure);
-	m->s.m_y_f = count_for_max_y(figure);
-	m->s.m_x_b = count_for_max_x(&g_gg->g_b_f);
-	m->s.m_y_b = count_for_max_y(&g_gg->g_b_f);
-	m->e.max_x = ((m->s.m_x_b + m->s.m_x_f - 1) <= g_s) ?
-			m->s.m_x_b : (g_s - m->s.m_x_f + 1);
-	m->e.max_y = ((m->s.m_y_b + m->s.m_y_f - 1) <= g_s) ?
-			m->s.m_y_b : (g_s - m->s.m_y_f + 1);
-	copy_in_struct(&m->f_c, figure);
-}
-
-void	se_pos_m2(t_m2 *p, t_f *figure)
-{
-	t_m2	*d;
-
-	d = p;
-	++d->se_xy.y;
-	move_down(figure);
-	copy_in_struct(&d->f_c, figure);
-}
-
-void	se_pos_d2(t_m2 *p, t_f *figure)
-{
-	t_m2	*d;
-
-	d = p;
-	++d->se_xy.x;
-	move_right(&p->f_c);
-}
+	g = extern g_f_p_a;
+	st = p;
+	st->t_i = creat_temp(st->t_i, str, quantity);
+	st->check_mask = 0;
+	st->arg = 0;
+	extern g_f_p_a = malloc(sizeof(uint16_t) * (quantity + 1));
+	extern g_f_p_a[quantity] = '\0';
+}*/
