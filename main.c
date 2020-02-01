@@ -15,7 +15,7 @@
 #include "main_algorithm.h"
 #include "validate.h"
 #define MAX_FIG 26
-//argv[1]
+
 int	main(int argc, char **argv)
 {
 	char	*a;

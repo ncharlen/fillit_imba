@@ -20,12 +20,12 @@
 #include "f_f_m_a_p3.h"
 #include "logical.h"
 #include "f_f_m_a_p4.h"
+#include "main_a_sup.h"
 
 t_gg		g_gg;
 
 int			g_s = 0;
 int			g_counter = 0;
-int			g_flag = 0;
 uint16_t	*g_f_p_a;
 
 void	put_figure_in_array(char index, u_int8_t x, u_int8_t y)
@@ -108,6 +108,7 @@ int		s_p_e(t_f *figure, t_gg *g_gg, char *str)
 				insert_figure(&g_gg->g_m_f, &p->f_c);
 				cr_bor(&g_gg->g_b_f, &g_gg->g_m_f);
 				put_figure_in_array(*str, p->se_xy.x, p->se_xy.y);
+
 				copy_in_struct(&g_gg->g_o_v, &g_gg->g_m_f);
 				log_xor(&g_gg->g_b_f, &g_gg->g_m_f, p->f_c);
 				cr_bor(&g_gg->g_b_f, &g_gg->g_m_f);
@@ -120,57 +121,7 @@ int		s_p_e(t_f *figure, t_gg *g_gg, char *str)
 	return (0);
 }
 
-int		generate_start(char *str, int quantity)
-{
-	t_f			fun_fig;
-	t_gen_st	st_np;
-	t_gen_st	*st;
-	char		*p;
-	char		d2garray[(g_s = sqrt(M_S * quantity))][(g_s = sqrt(M_S * quantity))];
 
-	st = &st_np;
-	st->t_i = creat_temp(st->t_i, str, quantity);
-	st->check_mask = 0;
-	st->arg = 0;
-	g_f_p_a = malloc(sizeof(uint16_t) * (quantity + 1));
-	g_f_p_a[quantity] = '\0';
-	if (g_flag == 1)
-		g_s += 1;
-	if (str[1])
-	{
-		p = str;
-		while (*p && st->arg != 1)
-		{
-			if ((st->check_mask & (1 << (*p))) == 0)
-			{
-				st->check_mask |= 1 << (*p);
-				gen_start_swap(p, str);
-				set_figure(&fun_fig, create_tetro(*str));
-				st->arg = se_pos_st(&fun_fig, &g_gg, str);
-				gen_start_swap(p, str);
-			}
-			++p;
-		}
-		if (st->arg == 1)
-		{
-				check_array(st->t_i, g_f_p_a, quantity);
-				fill_bigarray(g_s, d2garray);
-				fill_f_l(g_s, g_f_p_a, d2garray);
-				print_bigarray(g_s, d2garray);
-				free(g_f_p_a);
-				free(st->t_i);
-				return (1);
-		}
-		else
-		{
-			g_flag = 1;
-			free(g_f_p_a);
-			free(st->t_i);
-			generate_start(str, quantity);
-		}
-	}
-	return (0);
-}
 
 int		generate(char *str)
 {

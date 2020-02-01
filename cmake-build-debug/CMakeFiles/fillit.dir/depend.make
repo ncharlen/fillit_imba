@@ -81,6 +81,19 @@ CMakeFiles/fillit.dir/main.c.o: ../main.c
 CMakeFiles/fillit.dir/main.c.o: ../main_algorithm.h
 CMakeFiles/fillit.dir/main.c.o: ../validate.h
 
+CMakeFiles/fillit.dir/main_a_sup.c.o: ../f_f_m_a.h
+CMakeFiles/fillit.dir/main_a_sup.c.o: ../f_f_m_a_p2.h
+CMakeFiles/fillit.dir/main_a_sup.c.o: ../f_f_m_a_p3.h
+CMakeFiles/fillit.dir/main_a_sup.c.o: ../f_f_m_a_p4.h
+CMakeFiles/fillit.dir/main_a_sup.c.o: ../field.h
+CMakeFiles/fillit.dir/main_a_sup.c.o: ../figure.h
+CMakeFiles/fillit.dir/main_a_sup.c.o: ../fill_print_final_result.h
+CMakeFiles/fillit.dir/main_a_sup.c.o: ../logical.h
+CMakeFiles/fillit.dir/main_a_sup.c.o: ../main_a_sup.c
+CMakeFiles/fillit.dir/main_a_sup.c.o: ../main_a_sup.h
+CMakeFiles/fillit.dir/main_a_sup.c.o: ../main_algorithm.h
+CMakeFiles/fillit.dir/main_a_sup.c.o: ../move_figure.h
+
 CMakeFiles/fillit.dir/main_algorithm.c.o: ../f_f_m_a.h
 CMakeFiles/fillit.dir/main_algorithm.c.o: ../f_f_m_a_p2.h
 CMakeFiles/fillit.dir/main_algorithm.c.o: ../f_f_m_a_p3.h
@@ -89,6 +102,7 @@ CMakeFiles/fillit.dir/main_algorithm.c.o: ../field.h
 CMakeFiles/fillit.dir/main_algorithm.c.o: ../figure.h
 CMakeFiles/fillit.dir/main_algorithm.c.o: ../fill_print_final_result.h
 CMakeFiles/fillit.dir/main_algorithm.c.o: ../logical.h
+CMakeFiles/fillit.dir/main_algorithm.c.o: ../main_a_sup.h
 CMakeFiles/fillit.dir/main_algorithm.c.o: ../main_algorithm.c
 CMakeFiles/fillit.dir/main_algorithm.c.o: ../main_algorithm.h
 CMakeFiles/fillit.dir/main_algorithm.c.o: ../move_figure.h

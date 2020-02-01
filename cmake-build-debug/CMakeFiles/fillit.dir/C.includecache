@@ -126,7 +126,9 @@ string.h
 field.h
 /Users/dark/Documents/code/fillit_imba/field.h
 
-/Users/dark/Documents/code/fillit_imba/main_algorithm.c
+/Users/dark/Documents/code/fillit_imba/main_a_sup.c
+main_a_sup.h
+/Users/dark/Documents/code/fillit_imba/main_a_sup.h
 figure.h
 /Users/dark/Documents/code/fillit_imba/figure.h
 field.h
@@ -147,6 +149,22 @@ logical.h
 /Users/dark/Documents/code/fillit_imba/logical.h
 f_f_m_a_p4.h
 /Users/dark/Documents/code/fillit_imba/f_f_m_a_p4.h
+
+/Users/dark/Documents/code/fillit_imba/main_a_sup.h
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+fcntl.h
+-
+string.h
+-
+field.h
+/Users/dark/Documents/code/fillit_imba/field.h
+main_algorithm.h
+/Users/dark/Documents/code/fillit_imba/main_algorithm.h
 
 /Users/dark/Documents/code/fillit_imba/main_algorithm.h
 math.h

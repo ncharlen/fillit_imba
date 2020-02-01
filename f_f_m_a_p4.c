@@ -21,17 +21,19 @@
 #include "f_f_m_a.h"
 #include "logical.h"
 #include "main_algorithm.h"
-/*
-void	set_gen_st(t_gen_st *p, char *str, int quantity)
-{
-	t_gen_st *st;
-	uint16_t	*g;
 
-	g = extern g_f_p_a;
+void	set_gen_st(t_ms *p, char *str, int quantity)
+{
+	t_ms *st;
+	extern uint16_t *g_f_p_a;
+
 	st = p;
-	st->t_i = creat_temp(st->t_i, str, quantity);
-	st->check_mask = 0;
-	st->arg = 0;
-	extern g_f_p_a = malloc(sizeof(uint16_t) * (quantity + 1));
-	extern g_f_p_a[quantity] = '\0';
-}*/
+	st->p = str;
+	st->st = &st->st_np;
+	st->st->t_i = creat_temp(p->st->t_i, str, quantity);
+	st->st->check_mask = 0;
+	st->st->arg = 0;
+	g_f_p_a = malloc(sizeof(uint16_t) * (quantity + 1));
+	g_f_p_a[quantity] = '\0';
+}
+

@@ -21,4 +21,6 @@
 # include "field.h"
 # include "main_algorithm.h"
 
+void	set_gen_st(t_ms *p, char *str, int quantity);
+
 #endif

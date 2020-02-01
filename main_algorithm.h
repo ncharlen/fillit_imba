@@ -14,6 +14,7 @@
 # define FILLIT_MAIN_ALGORITHM_H
 # include <math.h>
 # define M_S 4
+extern int g_s;
 
 typedef struct	s_search{
 	int max_x_f;
@@ -70,6 +71,13 @@ typedef struct	s_mega2{
 	t_s_f	s;
 	t_xy	se_xy;
 }				t_m2;
+
+typedef struct	s_ms{
+	t_f			fun_fig;
+	t_gen_st	st_np;
+	t_gen_st	*st;
+	char		*p;
+}				t_ms;
 
 int				se_pos_st(t_f *figure, t_gg *g_gg, char *str);
 int				se_pos(t_f *figure, t_gg *g_gg, char *str);

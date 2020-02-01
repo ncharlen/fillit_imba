@@ -23,7 +23,7 @@
 
 void log_xor(t_f *borders, t_f *main_field, t_f figure_copy);
 void move(t_f *figure, t_f figure_copy);
-char *creat_temp(char *temp_inital, char *str, int quantity);
+char *creat_temp(char *t_i, char *str, int quantity);
 void gen_swap(t_gen *gen, char *str);
 void gen_start_swap(char *p, char *str);
 

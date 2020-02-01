@@ -30,19 +30,19 @@ void	move(t_f *figure, t_f figure_copy)
 	copy_in_struct(&figure_copy, figure);
 }
 
-char	*creat_temp(char *temp_inital, char *str, int quantity)
+char	*creat_temp(char *t_i, char *str, int quantity)
 {
 	int i;
 
 	i = 0;
-	temp_inital = malloc(sizeof(char) * (quantity + 1));
-	temp_inital[quantity] = '\0';
+	t_i = malloc(sizeof(char) * (quantity + 1));
+	t_i[quantity] = '\0';
 	while (i < quantity)
 	{
-		temp_inital[i] = str[i];
+		t_i[i] = str[i];
 		++i;
 	}
-	return (temp_inital);
+	return (t_i);
 }
 
 void	gen_swap(t_gen *gen, char *str)

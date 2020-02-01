@@ -366,6 +366,33 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/fillit.dir/build.make CMakeFiles/fillit.dir/main.c.s
 .PHONY : main.c.s
 
+main_a_sup.o: main_a_sup.c.o
+
+.PHONY : main_a_sup.o
+
+# target to build an object file
+main_a_sup.c.o:
+	$(MAKE) -f CMakeFiles/fillit.dir/build.make CMakeFiles/fillit.dir/main_a_sup.c.o
+.PHONY : main_a_sup.c.o
+
+main_a_sup.i: main_a_sup.c.i
+
+.PHONY : main_a_sup.i
+
+# target to preprocess a source file
+main_a_sup.c.i:
+	$(MAKE) -f CMakeFiles/fillit.dir/build.make CMakeFiles/fillit.dir/main_a_sup.c.i
+.PHONY : main_a_sup.c.i
+
+main_a_sup.s: main_a_sup.c.s
+
+.PHONY : main_a_sup.s
+
+# target to generate assembly for a file
+main_a_sup.c.s:
+	$(MAKE) -f CMakeFiles/fillit.dir/build.make CMakeFiles/fillit.dir/main_a_sup.c.s
+.PHONY : main_a_sup.c.s
+
 main_algorithm.o: main_algorithm.c.o
 
 .PHONY : main_algorithm.o
@@ -510,6 +537,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... main_a_sup.o"
+	@echo "... main_a_sup.i"
+	@echo "... main_a_sup.s"
 	@echo "... main_algorithm.o"
 	@echo "... main_algorithm.i"
 	@echo "... main_algorithm.s"

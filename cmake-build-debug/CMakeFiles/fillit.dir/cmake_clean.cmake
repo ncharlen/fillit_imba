@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/fillit.dir/fill_print_final_result.c.o"
   "CMakeFiles/fillit.dir/logical.c.o"
   "CMakeFiles/fillit.dir/main.c.o"
+  "CMakeFiles/fillit.dir/main_a_sup.c.o"
   "CMakeFiles/fillit.dir/main_algorithm.c.o"
   "CMakeFiles/fillit.dir/move_figure.c.o"
   "CMakeFiles/fillit.dir/useful_f_p1.c.o"

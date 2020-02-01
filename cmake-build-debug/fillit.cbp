@@ -129,6 +129,12 @@
 		<Unit filename="/Users/dark/Documents/code/fillit_imba/main.c">
 			<Option target="fillit"/>
 		</Unit>
+		<Unit filename="/Users/dark/Documents/code/fillit_imba/main_a_sup.c">
+			<Option target="fillit"/>
+		</Unit>
+		<Unit filename="/Users/dark/Documents/code/fillit_imba/main_a_sup.h">
+			<Option target="fillit"/>
+		</Unit>
 		<Unit filename="/Users/dark/Documents/code/fillit_imba/main_algorithm.c">
 			<Option target="fillit"/>
 		</Unit>
